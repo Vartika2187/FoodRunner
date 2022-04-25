@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#a7ffeb</color>
+    <color name="colorPrimaryDark">#70F1F1</color>
+    <color name="colorPrimaryLight">#FFEB3B</color>
+    <color name="colorAccent">#FF5722</color>
+    <color name="cart_button">#4CAF50</color>
+    <color name="colorForm">#fce4ec</color>
+    <color name="colorFaqs">#ff8a80</color>
+</resources>

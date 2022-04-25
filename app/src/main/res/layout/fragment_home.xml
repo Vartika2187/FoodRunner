@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.HomeFragment"
+    android:background="#F4F6F7">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:id="@+id/rlFavorites">
+
+        <TextView
+            android:id="@+id/textHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/our_service_for_food_is_available_from_8_am_to_8_30_pm_so_fast_and_so_yummy"
+            android:textSize="13sp"
+            android:layout_centerHorizontal="true"
+            android:background="#ffffff"
+            android:padding="18dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="78dp"
+            android:background="#ffffff">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card1"
+                android:layout_width="380dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:layout_marginStart="18dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="#9B69ED"
+                app:cardPreventCornerOverlap="true"
+                app:cardElevation="3dp"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/banner2"
+                    android:layout_marginStart="0dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_card_1_text"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginStart="265dp"
+                    android:padding="10dp"
+                    android:textStyle="bold"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card2"
+            android:layout_width="380dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            app:cardCornerRadius="7dp"
+            android:layout_below="@id/card1"
+            app:cardBackgroundColor="#F9E79F"
+            app:cardPreventCornerOverlap="true"
+            app:cardElevation="3dp"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/scroll_to_view_all_restaurants"
+                android:background="#F9E79F"
+                android:layout_marginTop="4dp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:textColor="#827717"/>
+
+            <ImageView
+                android:layout_width="395dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="30dp"
+                android:layerType="software"
+                android:layout_gravity="center"
+                android:src="@drawable/banner"
+                android:contentDescription="@string/live_for_food" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card3"
+            android:layout_width="380dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/card2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:clickable="true"
+            app:cardCornerRadius="7dp"
+            app:cardBackgroundColor="#E1F5FE"
+            app:cardPreventCornerOverlap="true"
+            app:cardElevation="3dp"
+            android:focusable="true"
+            app:strokeColor="#81D4FA"
+            app:strokeWidth="2dp">
+
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:text="@string/best_safety_standards"
+                android:textColor="#0097A7"
+                android:drawableEnd="@drawable/ic_action_design"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="270dp"
+                android:text="@string/what_our_restaurant_partners_are_doing_to_keep_your_food_safe"
+                android:textSize="14sp"
+                android:layout_marginTop="45dp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:text="@string/know_more"
+                android:textAllCaps="true"
+                android:textSize="15sp"
+                android:padding="15dp"
+                android:textStyle="bold"
+                android:textColor="#26C6DA"
+                android:background="#B3E5FC"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="620dp"
+            android:id="@+id/relativeLayout3">
+
+        <TextView
+            android:id="@+id/textHome1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:paddingBottom="35dp"
+            android:text="Discover All Restaurants Nearby:"
+            android:background="#ffffff"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerRestaurants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textHome1"
+            android:layout_marginBottom="80dp"
+            android:background="#ffffff"
+            android:padding="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F4F6F7"
+                android:text="Food Is Life..."
+                android:layout_below="@id/recyclerRestaurants"
+                android:textAllCaps="true"
+                android:textSize="60sp"
+                android:drawableEnd="@drawable/ic_action_spoons"
+                android:drawablePadding="10dp"
+                android:textStyle="bold"
+                android:textColor="#D7DBDD"
+                android:padding="20dp"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="100dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rlLoading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+</FrameLayout>

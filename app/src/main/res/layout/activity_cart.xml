@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.CartActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlCart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+
+        <LinearLayout
+            android:id="@+id/llRestaurantStatic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/cart_header_margin"
+            android:layout_below="@+id/toolbar"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/cart_text_padding"
+                android:paddingStart="15dp"
+                android:text="@string/ordering_from"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtCartResName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/cart_text_padding"
+                android:text="@string/restaurant_name_comes_here"
+                android:textColor="@android:color/black"
+                android:textAllCaps="false"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/llRestaurantStatic"
+            android:background="#CFD8DC"/>
+
+        <TextView
+            android:id="@+id/textCart1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view1"
+            android:text="@string/review_your_order_and_address_details_to_avoid_cancellations"
+            android:layout_margin="8dp"
+            android:paddingStart="8dp"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cartCard1"
+            android:layout_width="385dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/textCart1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:clickable="true"
+            app:cardCornerRadius="7dp"
+            app:cardBackgroundColor="#FFF3E0"
+            app:cardPreventCornerOverlap="true"
+            app:cardElevation="3dp"
+            android:focusable="true"
+            app:strokeColor="#FFCC80"
+            app:strokeWidth="2dp">
+
+            <TextView
+                android:id="@+id/cardText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/go_for_no_contact_delivery"
+                android:textSize="16sp"
+                android:layout_margin="8dp"
+                android:drawableStart="@drawable/ic_action_check"
+                android:drawablePadding="5dp"
+                android:textColor="#ff8a80"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/cardText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/our_delivery_partners_will_call_or_ring_your_doorbell_after_reaching_and_leave_the_order_at_your_door_gate"
+                android:textColor="#ffab91"
+                android:textSize="10sp"
+                android:layout_marginTop="33dp"
+                android:padding="8dp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp" />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:padding="10dp"
+            android:layout_below="@+id/cartCard1"
+            android:background="#ECEFF1"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerCartItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnConfirmOrder"
+            android:layout_below="@+id/view2"
+            android:layout_margin="@dimen/cart_header_margin"
+            android:padding="@dimen/cart_recycler_padding"/>
+
+
+        <Button
+            android:id="@+id/btnConfirmOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#64DD17"
+            android:text="@string/confirm_order"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rlLoading"
+        android:visibility="invisible">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+</RelativeLayout>
