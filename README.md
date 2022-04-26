@@ -11,6 +11,14 @@ Here, I have build a food ordering application with all the required functionali
 <img src="https://github.com/Vartika2187/FoodRunner/blob/master/Img3.jpg" width="200px" height="350px"/>
 <h4>Registration Page</h4>
 <p>The registration process will send the details to the server.</p>
-<img src="https://github.com/Vartika2187/FoodRunner/blob/master/Img2.jpg" width="200px" height="350px"/>
+<img src="https://github.com/Vartika2187/FoodRunner/blob/master/Img2..jpg" width="200px" height="350px"/>
+<h4>Forget Password Page</h4>
+<img src="https://github.com/Vartika2187/FoodRunner/blob/master/Img3.jpg" width="200px" height="350px"/>
+<p><i>** OTP would be sent only once in 24 hrs. Hence, if you need to reset the password multiple times within 24 hrs kindly use the same otp.</i></p>
+<h4>Navigation Drawer</h4>
+<p>This page lets user navigate to different pages inside the app.</p>
+<img src="https://github.com/Vartika2187/FoodRunner/blob/master/Img2..jpg" width="200px" height="350px"/>
+<h4>Home page</h4>
+<img src="https://github.com/Vartika2187/FoodRunner/blob/master/Img2..jpg" width="200px" height="350px"/>
  
 
