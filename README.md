@@ -5,6 +5,6 @@ Here, I have build a food ordering application with all the required functionali
 ### Sneek Peak into FoodRunner
 <h4>Splash Page</h4>
 <p>This is the first page which gets displayed when the user opens the app and then it moves on to the login page without any user interaction.</p>
-<img src="https://github.com/Vartika2187/FoodRunner/blob/master/Img1.jpg" width="200px" height="300px"/>
+<img src="https://github.com/Vartika2187/FoodRunner/blob/master/Img1.jpg" width="200px" height="350px"/>
  
 
