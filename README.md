@@ -17,8 +17,35 @@ Here, I have build a food ordering application with all the required functionali
 <p><i>** OTP would be sent only once in 24 hrs. Hence, if you need to reset the password multiple times within 24 hrs kindly use the same otp.</i></p>
 <h4>Navigation Drawer</h4>
 <p>This page lets user navigate to different pages inside the app.</p>
-<img src="https://github.com/Vartika2187/FoodRunner/blob/master/Img2..jpg" width="200px" height="350px"/>
+<img src="https://github.com/Vartika2187/FoodRunner/blob/master/Img5.jpg" width="200px" height="350px"/>
 <h4>Home page</h4>
-<img src="https://github.com/Vartika2187/FoodRunner/blob/master/Img2..jpg" width="200px" height="350px"/>
- 
+<img src="https://github.com/Vartika2187/FoodRunner/blob/master/Img6.jpg" width="200px" height="350px"/>
+<img src="https://github.com/Vartika2187/FoodRunner/blob/master/Img7.jpg" width="200px" height="350px"/>
+<h4>Filter</h4>
+<p>Sorting functionality lets user sort restaurants based on their prices</p>
+<img src="https://github.com/Vartika2187/FoodRunner/blob/master/Img8.jpg" width="200px" height="350px"/>
+<h4>About</h4>
+<img src="https://github.com/Vartika2187/FoodRunner/blob/master/Img9.jpg" width="200px" height="350px"/>
+<h4>Restaurant Details</h4>
+<p>The restaurant details are used to display the menu of the restaurant. When clicked on any restaurant a request is send to the server.</p>
+<img src="https://github.com/Vartika2187/FoodRunner/blob/master/Img10.jpg" width="200px" height="350px"/>
+<h4>Profile Page</h4>
+<img src="https://github.com/Vartika2187/FoodRunner/blob/master/Img11.jpg" width="200px" height="350px"/>
+<h4>Favorites</h4>
+<p>This page contains the list of the restaurants which were marked as a favourite by the user. These are fetched from the local database.</p>
+<img src="https://github.com/Vartika2187/FoodRunner/blob/master/Img12.jpg" width="200px" height="350px"/>
+<h4>Previous Orders</h4>
+<p>This page contains the list of the food items you have previously ordered, arranged in reverse chronological order.</p>
+<img src="https://github.com/Vartika2187/FoodRunner/blob/master/Img13.jpg" width="200px" height="350px"/>
+<h4>Frequently Asked Questions</h4>
+<p>This page contains the static list of questions.</p>
+<img src="https://github.com/Vartika2187/FoodRunner/blob/master/Img14.jpg" width="200px" height="350px"/>
+<img src="https://github.com/Vartika2187/FoodRunner/blob/master/Img15.jpg" width="200px" height="350px"/>
+<h4>Cart</h4>
+<p>This page contains the list of the food items you have previously ordered, arranged in reverse chronological order.</p>
+<img src="https://github.com/Vartika2187/FoodRunner/blob/master/Img16.jpg" width="200px" height="350px"/>
+ <h4>Now relax...it's done</h4>
+<img src="https://github.com/Vartika2187/FoodRunner/blob/master/Img17.jpg" width="200px" height="350px"/>
+
+
 
